@@ -30,9 +30,47 @@ button {
   font: inherit;
 }
 
-/* ------------------- End of CSS Reset ------------------- */
+/* ------------------- CSS Variables ------------------- */
+:root {
+  --ff-hanken-grotesk: "Hanken Grotesk", sans-serif;
+
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --fw-extra-bold: 800;
+
+  --fs-body: 1.125rem;
+  --fs-heading-m: 1.5rem;
+  --fs-heading-l: 2rem;
+  --fs-heading-xl: 4.5rem;
+
+  --clr-white: hsl(0, 0%, 100%);
+
+  --clr-dark-navy: hsl(224, 30%, 27%);
+}
 
 body {
-  font-family: "Hanken Grotesk", sans-serif;
+  font-family: var(--ff-hanken-grotesk);
+  font-size: var(--fs-body);
   background-color: grey;
+}
+
+.main {
+  background-color: red;
+  max-width: 24rem;
+  padding-inline: 1.875rem;
+}
+
+.button {
+  width: 100%;
+  font-weight: var(--fw-bold);
+  color: var(--clr-white);
+  background-color: var(--clr-dark-navy);
+  border: none;
+  border-radius: 100vw;
+  padding: 1rem;
+}
+
+.button:hover {
+  cursor: pointer;
+  background: linear-gradient(#6943ff, #2f2ce9);
 }
