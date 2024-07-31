@@ -51,6 +51,7 @@ button {
 body {
   font-family: var(--ff-hanken-grotesk);
   font-size: var(--fs-body);
+  font-weight: var(--fw-bold);
   background-color: grey;
 }
 
@@ -60,9 +61,14 @@ body {
   padding-inline: 1.875rem;
 }
 
+.summary {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
 .button {
   width: 100%;
-  font-weight: var(--fw-bold);
   color: var(--clr-white);
   background-color: var(--clr-dark-navy);
   border: none;
