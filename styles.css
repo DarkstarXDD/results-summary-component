@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("./src/assets/fonts/HankenGrotesk-VariableFont_wght.woff2");
+}
+
+/* ------------------- CSS Reset ------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+*:focus-visible {
+  outline: 0.125rem dotted red;
+  outline-offset: 0.125rem;
+}
+
+img,
+svg,
+picture {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+/* ------------------- End of CSS Reset ------------------- */
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  background-color: grey;
+}
