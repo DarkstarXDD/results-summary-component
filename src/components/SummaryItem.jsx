@@ -1,9 +1,16 @@
 export default function SummaryItem(props) {
   return (
-    <li className="summary-item">
-      <img src={props.icon} alt="" className="summary-item__icon" />
-      <p className="summary-item__category">{props.category}</p>
-      <p className="summary-item__score">{`${props.score} / 100`}</p>
+    <li
+      className={`summary-item summary-item--${props.category.toLowerCase()}`}
+    >
+      <div className="summary-item__icon-category-wrapper">
+        <img src={props.icon} alt="" className="summary-item__icon" />
+        <p className="summary-item__category">{props.category}</p>
+      </div>
+      <p className="summary-item__score">
+        <span className="actual-score">{props.score}</span>
+        <span className="total-score"> / 100</span>
+      </p>
     </li>
   )
 }

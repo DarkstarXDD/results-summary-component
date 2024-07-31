@@ -1,4 +1,5 @@
 import SummaryItem from "./SummaryItem"
+import Button from "./Button"
 
 export default function Summary(props) {
   const resultsData = props.jsonData
@@ -18,6 +19,7 @@ export default function Summary(props) {
     <div className="summary">
       <h2 className="summary__heading">Summary</h2>
       <ul className="summary__items">{summaryItemElements}</ul>
+      <Button buttonText="Continue" />
     </div>
   )
 }

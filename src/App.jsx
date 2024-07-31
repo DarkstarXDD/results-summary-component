@@ -1,13 +1,13 @@
+import Result from "./components/Result"
 import Summary from "./components/Summary"
-import Button from "./components/Button"
 
 import jsonData from "./data/data.json"
 
 export default function App() {
   return (
     <main className="main">
+      <Result />
       <Summary jsonData={jsonData} />
-      <Button buttonText="Continue" />
     </main>
   )
 }
