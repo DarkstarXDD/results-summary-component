@@ -1,19 +1,20 @@
+import { useState } from "react"
 import Result from "./components/Result"
 import Summary from "./components/Summary"
 
 import jsonData from "./data/data.json"
 
 export default function App() {
+  const [results, setResults] = useState(jsonData)
+
   function calcScore() {
     let score = 0
 
-    for (let i = 0; i < jsonData.length; i++) {
-      score += jsonData[i].score
+    for (let i = 0; i < results.length; i++) {
+      score += results[i].score
     }
 
-    console.log(score)
-
-    score = Math.round(score / jsonData.length)
+    score = Math.round(score / results.length)
     return score
   }
 
@@ -29,10 +30,19 @@ export default function App() {
   const score = calcScore()
   const grade = calcGrade(score)
 
+  function handleClick() {
+    setResults((prevResult) =>
+      prevResult.map((currentResult) => {
+        let newRandomScore = Math.ceil(Math.random() * 100)
+        return { ...currentResult, score: newRandomScore }
+      })
+    )
+  }
+
   return (
     <main className="main">
       <Result score={score} grade={grade} />
-      <Summary jsonData={jsonData} />
+      <Summary jsonData={results} handleClick={handleClick} />
     </main>
   )
 }

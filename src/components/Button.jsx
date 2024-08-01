@@ -1,3 +1,7 @@
 export default function Button(props) {
-  return <button className="button">{props.buttonText}</button>
+  return (
+    <button onClick={props.handleClick} className="button">
+      {props.buttonText}
+    </button>
+  )
 }
