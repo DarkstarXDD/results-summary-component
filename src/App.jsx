@@ -42,7 +42,7 @@ export default function App() {
   return (
     <main className="main">
       <Result score={score} grade={grade} />
-      <Summary jsonData={results} handleClick={handleClick} />
+      <Summary results={results} handleClick={handleClick} />
     </main>
   )
 }

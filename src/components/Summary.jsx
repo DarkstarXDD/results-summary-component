@@ -2,9 +2,7 @@ import SummaryItem from "./SummaryItem"
 import Button from "./Button"
 
 export default function Summary(props) {
-  const resultsData = props.jsonData
-
-  const summaryItemElements = resultsData.map((result) => {
+  const summaryItemElements = props.results.map((result) => {
     return (
       <SummaryItem
         key={result.id}
