@@ -1,7 +1,7 @@
 export default function Result(props) {
   return (
     <div className="result">
-      <h2 className="result__heading">Your Result</h2>
+      <h1 className="result__heading">Your Result</h1>
       <p className="result__score">
         <span className="result__score--actual">{props.score}</span>
         <span className="result__score--original"> of 100</span>

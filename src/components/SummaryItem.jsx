@@ -1,6 +1,7 @@
 export default function SummaryItem(props) {
   return (
     <li
+      role="listitem"
       className={`summary-item summary-item--${props.category.toLowerCase()}`}
     >
       <div className="summary-item__icon-category-wrapper">
@@ -8,7 +9,9 @@ export default function SummaryItem(props) {
         <p className="summary-item__category">{props.category}</p>
       </div>
       <p className="summary-item__score">
-        <span className="actual-score">{props.score}</span>
+        <span className="actual-score">
+          <strong>{props.score}</strong>
+        </span>
         <span className="total-score"> / 100</span>
       </p>
     </li>

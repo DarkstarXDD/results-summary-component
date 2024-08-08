@@ -16,7 +16,9 @@ export default function Summary(props) {
   return (
     <div className="summary">
       <h2 className="summary__heading">Summary</h2>
-      <ul className="summary__items">{summaryItemElements}</ul>
+      <ul role="list" className="summary__items">
+        {summaryItemElements}
+      </ul>
       <Button buttonText="Randomize" handleClick={props.handleClick} />
     </div>
   )
