@@ -59,6 +59,7 @@ button {
   --clr-very-light-blue: 221, 100%, 96%;
   --clr-dark-navy: 224, 30%, 27%;
 }
+/* ------------------- End of CSS Variables ------------------- */
 
 body {
   display: flex;
@@ -72,15 +73,17 @@ body {
   min-height: 100vh;
 }
 
-.main {
+.component {
   max-width: 24rem;
   background-color: var(--clr-white);
 }
 
 .result {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 1.5rem;
-  justify-items: center;
   text-align: center;
   color: hsl(var(--clr-light-blue));
   background: linear-gradient(#6943ff, #2f2ce9);
@@ -103,7 +106,7 @@ body {
   border-radius: 100vw;
 }
 
-.result__score--actual {
+.result__score--achieved {
   font-size: var(--fs-800);
   color: var(--clr-white);
 }
@@ -185,7 +188,7 @@ body {
   font-weight: var(--fw-bold);
 }
 
-.actual-score {
+.achieved-score {
   color: hsl(var(--clr-dark-navy));
 }
 
@@ -216,7 +219,7 @@ body {
 }
 
 @media (min-width: 48rem) {
-  .main {
+  .component {
     max-width: 46rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -225,7 +228,7 @@ body {
 
   .result {
     border-radius: 32px;
-    padding: 2.5rem;
+    padding: 2.5rem 3rem;
   }
 
   .result__score {
@@ -233,7 +236,7 @@ body {
     height: 12.5rem;
   }
 
-  .result__score--actual {
+  .result__score--achieved {
     font-size: var(--fs-900);
   }
 

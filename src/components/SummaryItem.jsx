@@ -9,7 +9,7 @@ export default function SummaryItem(props) {
         <p className="summary-item__category">{props.category}</p>
       </div>
       <p className="summary-item__score">
-        <span className="actual-score">
+        <span className="achieved-score">
           <strong>{props.score}</strong>
         </span>
         <span className="total-score"> / 100</span>
