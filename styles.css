@@ -76,6 +76,7 @@ body {
 .component {
   max-width: 24rem;
   background-color: var(--clr-white);
+  box-shadow: 0 10px 40px 0 hsl(var(--clr-dark-navy), 0.1);
 }
 
 .result {
