@@ -12,7 +12,7 @@
 }
 
 *:focus-visible {
-  outline: 0.125rem dotted #2f2ce9;
+  outline: 0.125rem dotted var(--clr-dark-blue);
   outline-offset: 0.125rem;
 }
 
