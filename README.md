@@ -2,6 +2,8 @@
 
 This is my solution to the [Results Summary Component](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV) challenge on [Frontend Mentor](https://www.frontendmentor.io/).
 
+#
+
 ### Links. 🔗
 
 - Live Site URL: https://results-summary-component-darkstarxdd.vercel.app/
